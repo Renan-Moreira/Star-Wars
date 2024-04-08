@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars | Renan Moreira</title>
+    <link rel="stylesheet" href="personagens.css">
+    <link rel="shortcut icon" href="./assets/millennium-falcon-png-1.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./assets/star_wars_logo_PNG34.png" alt="logo" class="logo-img">
+            </div>
+        </a>
+        
+        <nav>
+            <ul>
+                
+                <a href="./index.html">
+                    <span class="span-logo">Personagens</span>
+                </a>
+                <a href="./index.html">
+                    <li>Naves</li>
+                </a>
+                
+                <a href="./index.html">
+                    <li>Planetas</li>
+                </a>
+
+            </ul>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/renanmoreira8378/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100009995290023" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/renan-moreira-69430226a/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav id="navigate-personagens">
+            <ul>
+                
+                <a href="./index.html">
+                    <span id="personagens" class="span-logo">Personagens</span>
+                </a>
+                <a href="./index.html">
+                    <li>Naves</li>
+                </a>
+                
+                <a href="./index.html">
+                    <li>Planetas</li>
+                </a>
+
+            </ul>
+        </nav>
+        <h1>Conheca tudo sobre star wars em um so lugar</h1>
+
+        <div class="main-content" id="main-content"></div>
+
+        <div class="model" id="model" onclick="hideModel()">
+            <div class="model-content" id="model-content"></div>
+        </div>
+
+        <div class="buttons">
+            <button class="back-button" id="back-button" onclick="loadPreviousPage()">Anterior</button>
+            <button class="next-button" id="next-button" onclick="loadNextPage()">Próxima</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="tema">Star Wars</p>
+        <p class="copyright">Desenvolvido por &COPY; Renan Moreira</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b28f0f78d8.js" crossorigin="anonymous"></script>
+    <script src="./personagens.js"></script>
+</body>
+</html>

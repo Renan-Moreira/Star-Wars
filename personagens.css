@@ -1,0 +1,234 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-image: url('./assets/imagemPersonagens.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.logo{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img{
+    width: 40%;
+}
+.span-logo{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.span-logo:hover{
+    color: gold;
+}
+.social-media{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i{
+    font-size: 1.2rem;
+}
+i:hover{
+    color: gold;
+}
+nav{
+    width: 50%;
+    margin-right: 120px;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+}
+ul li:hover{
+    transition: 0.5s;
+    color: gold;
+    cursor: pointer;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+h1{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.5rem;
+    color: gold;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 10px;
+    padding: 20px 10px;
+}
+.cards{
+    width: 250px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.cards:hover{
+    transform: scale(1.02);
+}
+.characters-name-bg{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.characters-name{
+    color: gold;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+}
+.buttons{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    width: 60px;
+    height: 20px;
+    background-color: gold;
+    border: 1px solid black;
+    font-weight: 700;
+    margin-top: 30px;
+    color: black;
+    cursor: pointer;
+}
+button:hover{
+    color: gold;
+    background-color: black;
+}
+#back-button{
+    visibility: hidden;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 20px 0;
+}
+.tema{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.copyright{
+    font-weight: 900;
+}
+.model{
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.model-content{
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: center;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+.content-details{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gold;
+}
+#navigate-personagens{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .model-content{
+        width: 100vw;
+        height: 80vh;
+    }
+    nav{
+        display: none;
+    }
+    h1{
+        display: none;
+        margin-left: 10px;
+    }
+    #navigate-personagens{
+        display: block;
+    }
+    #navigate-personagens ul{
+        width: 80%;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+    #personagens{
+        display: none;
+    }
+    .social-media{
+        width: 80px;
+    }
+}
